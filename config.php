@@ -6,9 +6,16 @@ define('HTTP_SERVER', 'http://192.168.0.108/open/');
 define('HTTPS_SERVER', 'http://192.168.0.108/open/');
 
 // DIR
-define('DIR_APPLICATION', '/var/www/html/open/catalog/');
-define('DIR_SYSTEM', '/var/www/html/open/system/');
-define('DIR_IMAGE', '/var/www/html/open/image/');
+// Em produção
+define('DIR_APPLICATION', '/home/evonnis.com/public/open/catalog/');
+define('DIR_SYSTEM', '/home/evonnis.com/public/open/system/');
+define('DIR_IMAGE', '/home/evonnis.com/public/open/image/');
+
+
+// Máquina local
+// define('DIR_APPLICATION', '/var/www/html/open/catalog/');
+// define('DIR_SYSTEM', '/var/www/html/open/system/');
+// define('DIR_IMAGE', '/var/www/html/open/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
