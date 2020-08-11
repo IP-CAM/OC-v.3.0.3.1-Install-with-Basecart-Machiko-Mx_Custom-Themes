@@ -1,0 +1,39 @@
+2020-07-30 17:52:02 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------

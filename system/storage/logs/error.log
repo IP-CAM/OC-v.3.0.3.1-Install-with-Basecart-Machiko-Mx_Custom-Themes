@@ -1,0 +1,79 @@
+2020-07-30 17:43:22 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-07-30 17:43:22 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-07-30 17:43:23 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-07-30 17:43:23 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-07-31 10:54:05 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/settings.json): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2228
+2020-07-31 10:54:05 - PHP Notice:  Undefined index: custom_code_js in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2231
+2020-07-31 10:54:05 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/js/custom_code.js): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2231
+2020-07-31 10:54:05 - PHP Notice:  Undefined index: custom_code_css in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2234
+2020-07-31 10:54:05 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/css/custom_code.css): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2234
+2020-07-31 10:54:10 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/settings.json): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2228
+2020-07-31 10:54:10 - PHP Notice:  Undefined index: custom_code_js in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2231
+2020-07-31 10:54:10 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/js/custom_code.js): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2231
+2020-07-31 10:54:10 - PHP Notice:  Undefined index: custom_code_css in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2234
+2020-07-31 10:54:10 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/css/custom_code.css): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2234
+2020-07-31 11:03:31 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/settings.json): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2228
+2020-07-31 11:03:31 - PHP Notice:  Undefined index: custom_code_js in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2231
+2020-07-31 11:03:31 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/js/custom_code.js): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2231
+2020-07-31 11:03:31 - PHP Notice:  Undefined index: custom_code_css in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2234
+2020-07-31 11:03:31 - PHP Warning:  file_put_contents(/var/www/html/open/catalog/view/theme/machiko/skins/store_default/Default Full Width/css/custom_code.css): failed to open stream: Permission denied in /var/www/html/open/admin/controller/extension/module/machiko.php on line 2234
+2020-07-31 12:34:55 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-07-31 12:34:55 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-03 18:56:55 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-03 18:56:55 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:40:20 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:40:20 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:45:59 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:45:59 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:58:13 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:58:13 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:58:15 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 14:58:15 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 19:06:01 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 19:06:01 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 19:06:02 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 19:06:02 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 20:09:20 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-04 20:09:20 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/html/open/system/library/template/Twig/Extension/Core.php on line 1266
+2020-08-10 13:25:15 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:15 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:16 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:16 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:16 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:16 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:51 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:51 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:55 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:55 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:59 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:25:59 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:26:10 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:26:10 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:26:13 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:26:13 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:27:04 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:27:04 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:27:09 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:27:09 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:27:27 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 13:27:27 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:01 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:01 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:05 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:05 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:14 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:14 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:18 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:18 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:22 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:22 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:30 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:30 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:37 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:37 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:44 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:44 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:45 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:45 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:47 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-08-10 14:02:47 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
