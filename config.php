@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://192.168.0.108/open/');
+define('HTTP_SERVER', 'http://evonnis-com.umbler.net/open/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://192.168.0.108/open/');
+define('HTTPS_SERVER', 'https://evonnis-com.umbler.net/open/');
 
 // DIR
 // Em produção
