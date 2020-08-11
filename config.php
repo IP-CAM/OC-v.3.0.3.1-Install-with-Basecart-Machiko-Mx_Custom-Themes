@@ -29,9 +29,9 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'hendz');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'teste');
+define('DB_HOSTNAME', 'mysql669.umbler.com');
+define('DB_USERNAME', 'evonnis');
+define('DB_PASSWORD', 'letsdobetter');
+define('DB_DATABASE', 'opencart_test');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
