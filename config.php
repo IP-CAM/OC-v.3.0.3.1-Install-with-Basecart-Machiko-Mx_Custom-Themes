@@ -1,15 +1,15 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://evonnis-com.umbler.net/open/');
+define('HTTP_SERVER', 'http://evonnis-com.umbler.net/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://evonnis-com.umbler.net/open/');
+define('HTTPS_SERVER', 'https://evonnis-com.umbler.net/');
 
 // DIR
 // Em produção
-define('DIR_APPLICATION', '/home/evonnis.com/public/open/catalog/');
-define('DIR_SYSTEM', '/home/evonnis.com/public/open/system/');
-define('DIR_IMAGE', '/home/evonnis.com/public/open/image/');
+define('DIR_APPLICATION', '/home/evonnis.com/public/catalog/');
+define('DIR_SYSTEM', '/home/evonnis.com/public/system/');
+define('DIR_IMAGE', '/home/evonnis.com/public/image/');
 
 
 // Máquina local
