@@ -125,6 +125,12 @@ div.required .control-label:before {
 }
 #top-links .dropdown-menu a {
 	text-shadow: none;
+	color: #FF007F;
+}
+
+#top-links .dropdown-menu {
+	text-shadow: none;
+	background-color: #FF007F;
 }
 #top-links .dropdown-menu a:hover {
 	color: #ffffff;
@@ -189,7 +195,7 @@ div.required .control-label:before {
 }
 
 #cart .text-center {
-	color: #fff;
+	color: #000;
 }
 #cart .text-right{
 	color: #000;
