@@ -1,7 +1,7 @@
 <?php
 // HTTP
 define('HTTP_SERVER', 'http://evonnis-com.umbler.net/admin/');
-define('HTTP_CATALOG', 'https://evonnis-com.umbler.net/');
+define('HTTP_CATALOG', 'http://evonnis-com.umbler.net/');
 
 // HTTPS
 define('HTTPS_SERVER', 'http://evonnis-com.umbler.net/admin/');
