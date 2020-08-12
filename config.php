@@ -3,7 +3,7 @@
 define('HTTP_SERVER', 'http://evonnis-com.umbler.net/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://evonnis-com.umbler.net/');
+define('HTTPS_SERVER', 'http://evonnis-com.umbler.net/');
 
 // DIR
 // Em produção
