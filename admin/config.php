@@ -5,7 +5,7 @@ define('HTTP_SERVER', 'http://evonnis-com.umbler.net/admin/');
 define('HTTP_CATALOG', 'http://evonnis-com.umbler.net/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://evonnis-com.umbler.net/admin');
+define('HTTPS_SERVER', 'http://evonnis-com.umbler.net/admin/');
 define('HTTPS_CATALOG', 'http://evonnis-com.umbler.net/');
 
 // Máquina Local
