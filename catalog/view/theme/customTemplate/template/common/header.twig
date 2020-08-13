@@ -75,11 +75,11 @@
           <h1><a href="{{ home }}">{{ name }}</a></h1>
           {% endif %}</div>
       </div>
-      <div class="col-sm-3">{{ search }}</div>
-      <div class="col-sm-3">{{ cart }}</div>
-      <div class="col-sm-2"><div id="top-links" class="nav pull-right">
+      <div class="col-sm-3 ">{{ search }}</div>
+      <div class="col-sm-3 col-xs-8">{{ cart }}</div>
+      <div class="col-sm-2 col-xs-4"><div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li class="dropdown"><a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle btn btn-inverse btn-block btn-lg btn-account" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md">{{ text_account }}</span> <span class="caret"></span></a>
+        <li class="dropdown"><a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle btn btn-inverse btn-block btn-lg btn-account" data-toggle="dropdown"><i class="fa fa-user"></i> <span class=" hidden-sm hidden-md">{{ text_account }}</span> <span class="caret"></span></a>
           <ul class="dropdown-menu dropdown-menu-right">
             {% if logged %}
             <li><a href="{{ account }}">{{ text_account }}</a></li>
