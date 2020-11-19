@@ -41,10 +41,10 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'mysql669.umbler.com');
-define('DB_USERNAME', '');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'test');
+define('DB_HOSTNAME', 'mysql380.umbler.com');
+define('DB_USERNAME', 'penatabua');
+define('DB_PASSWORD', 'PenaTabua20');
+define('DB_DATABASE', 'penatabua');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
