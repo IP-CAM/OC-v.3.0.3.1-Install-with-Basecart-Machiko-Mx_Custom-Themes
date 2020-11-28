@@ -217,7 +217,7 @@ div.required .control-label:before {
 .text-right-cart a {
 	color: #fff;
 	background: #FF007F;
-	background-image: linear-gradient(to bottom, #FF007F, #AA0155 );
+	background-image: linear-gradient(to bottom, #f5611d, #f76e2e );
 	padding: 10px;
 }
 

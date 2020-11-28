@@ -25,6 +25,7 @@ $_['column_price']           = 'Preço';
 $_['column_quantity']        = 'Quantidade';
 $_['column_status']          = 'Situação';
 $_['column_action']          = 'Ação';
+$_['column_date_available']  = 'Data';
 
 // Entry
 $_['entry_name']             = 'Produto';
@@ -44,7 +45,7 @@ $_['entry_mpn']              = 'MPN';
 $_['entry_location']         = 'Localização';
 $_['entry_shipping']         = 'Precisa de frete?';
 $_['entry_manufacturer']     = 'Marcas';
-$_['entry_date_available']   = 'Disponível a partir de';
+$_['entry_date_available']   = 'Data';
 $_['entry_quantity']         = 'Quantidade';
 $_['entry_minimum']          = 'Mínimo por venda';
 $_['entry_stock_status']     = 'Se esgotado';

@@ -89,3 +89,22 @@
 2020-11-19 15:39:29 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hendz'@'localhost' (using password: NO) in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 7
 2020-11-19 15:39:29 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
 2020-11-19 15:39:29 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-24 20:30:57 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 744
+2020-11-24 20:31:31 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 744
+2020-11-24 20:33:31 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 694
+2020-11-24 20:33:44 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 694
+2020-11-24 20:39:21 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 694
+2020-11-24 20:39:34 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 694
+2020-11-25 14:35:23 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 694
+2020-11-25 14:39:51 - PHP Notice:  Undefined variable: filter_teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 351
+2020-11-25 14:39:51 - PHP Notice:  Undefined variable: filter_teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 512
+2020-11-25 14:49:01 - PHP Notice:  Undefined index: teste in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 694
+2020-11-26 22:16:15 - PHP Notice:  Undefined index: sku in C:\xampp\htdocs\OpenCartPe\admin\model\catalog\product.php on line 138
+2020-11-26 22:16:56 - PHP Notice:  Undefined index: sku in C:\xampp\htdocs\OpenCartPe\admin\model\catalog\product.php on line 138
+2020-11-27 19:44:01 - PHP Notice:  Undefined variable: date_available in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 364
+2020-11-27 19:44:01 - PHP Notice:  Undefined variable: date_available in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 364
+2020-11-27 19:44:01 - PHP Notice:  Undefined variable: date_available in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 364
+2020-11-27 19:44:01 - PHP Notice:  Undefined variable: date_available in C:\xampp\htdocs\OpenCartPe\admin\controller\catalog\product.php on line 364
+2020-11-28 17:24:31 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'testasd' in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 7
+2020-11-28 17:24:31 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-28 17:24:31 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
