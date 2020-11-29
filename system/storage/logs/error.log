@@ -77,3 +77,15 @@
 2020-08-10 14:02:45 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
 2020-08-10 14:02:47 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
 2020-08-10 14:02:47 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/open/catalog/controller/startup/startup.php on line 166
+2020-11-19 15:36:02 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hendz'@'localhost' (using password: NO) in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 7
+2020-11-19 15:36:02 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:36:02 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:39:01 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hendz'@'localhost' (using password: NO) in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 7
+2020-11-19 15:39:01 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:39:01 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:39:28 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hendz'@'localhost' (using password: NO) in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 7
+2020-11-19 15:39:28 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:39:28 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:39:29 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'hendz'@'localhost' (using password: NO) in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 7
+2020-11-19 15:39:29 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
+2020-11-19 15:39:29 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\xampp\htdocs\OpenCartPe\system\library\db\mysqli.php on line 10
