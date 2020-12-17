@@ -1191,9 +1191,9 @@ class ControllerCatalogProduct extends Controller {
 			}
 		}
 
-		if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
-			$this->error['model'] = $this->language->get('error_model');
-		}
+		// if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
+		// 	$this->error['model'] = $this->language->get('error_model');
+		// }
 
 		if ($this->request->post['product_seo_url']) {
 			$this->load->model('design/seo_url');
@@ -1316,7 +1316,7 @@ class ControllerCatalogProduct extends Controller {
 				$json[] = array(
 					'product_id' => $result['product_id'],
 					'name'       => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8')),
-					'model'      => $result['model'],
+					'date_available'      => $result['date_available'],
 					'option'     => $option_data,
 					'price'      => $result['price']
 				);
