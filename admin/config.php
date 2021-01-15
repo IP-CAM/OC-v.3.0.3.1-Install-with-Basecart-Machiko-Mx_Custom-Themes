@@ -11,24 +11,24 @@
 // Máquina local
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost/OpenCartLingeries/admin/');
-define('HTTP_CATALOG', 'http://localhost/OpenCartLingeries/');
+define('HTTP_SERVER', 'http://localhost/penatabua/admin/');
+define('HTTP_CATALOG', 'http://localhost/penatabua/');
 
 // // HTTPS
-define('HTTPS_SERVER', 'http://localhost/OpenCartLingeries/admin/');
-define('HTTPS_CATALOG', 'http://localhost/OpenCartLingeries/');
+define('HTTPS_SERVER', 'http://localhost/penatabua/admin/');
+define('HTTPS_CATALOG', 'http://localhost/penatabua/');
 
 // DIR
 // define('DIR_APPLICATION', '/home/penatabua.com/public/admin/');
 // define('DIR_SYSTEM', '/home/penatabua.com/public/system/');
 // define('DIR_IMAGE', '/home/penatabua.com/public/image/');
-define('DIR_APPLICATION', 'C:/xampp/htdocs/OpenCartLingeries/admin/');
-define('DIR_SYSTEM', 'C:/xampp/htdocs/OpenCartLingeries/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/OpenCartLingeries/image/');
+define('DIR_APPLICATION', 'C:/xampp/htdocs/penatabua/admin/');
+define('DIR_SYSTEM', 'C:/xampp/htdocs/penatabua/system/');
+define('DIR_IMAGE', 'C:/xampp/htdocs/penatabua/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 // define('DIR_CATALOG', '/home/penatabua.com/public/catalog/');
 // // DIR Máquina Local
-define('DIR_CATALOG', 'C:/xampp/htdocs/OpenCartLingeries/catalog/');
+define('DIR_CATALOG', 'C:/xampp/htdocs/penatabua/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
