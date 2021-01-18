@@ -37,3 +37,385 @@ FILE: admin/view/template/common/header.twig
 CODE: jquery-2.1.1.min.js"></script>
 LINE: 17
 ----------------------------------------------------------------
+2021-01-15 20:18:53 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+2021-01-15 20:25:23 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------
+2021-01-17 19:20:39 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------
+2021-01-17 19:20:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------
+2021-01-17 19:21:58 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------
+2021-01-17 19:26:14 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------
+2021-01-17 19:26:35 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------
+2021-01-17 19:27:31 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 48
+LINE: 110
+LINE: 122
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Revslider Modifications
+
+FILE: admin/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 745
+
+FILE: admin/view/template/common/header.twig
+CODE: jquery-2.1.1.min.js"></script>
+LINE: 17
+----------------------------------------------------------------
+MOD: US Date Format
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+
+FILE: admin/language/en-gb/en-gb.php
+CODE: date_format_short
+LINE: 5
+----------------------------------------------------------------

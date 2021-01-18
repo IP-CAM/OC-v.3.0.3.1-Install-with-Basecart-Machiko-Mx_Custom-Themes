@@ -1,12 +1,12 @@
 
 <?php
 // // HTTP
-// define('HTTP_SERVER', 'http://penatabua-com.umbler.net/');
+// define('HTTP_SERVER', 'http://penatabua.walktur.com.br/');
 
 // // HTTPS
-// define('HTTPS_SERVER', 'http://penatabua-com.umbler.net/');
+// define('HTTPS_SERVER', 'http://penatabua.walktur.com.br/');
 
-// Máquina Local
+// // Máquina Local
 // HTTP
 define('HTTP_SERVER', 'http://localhost/penatabua/');
 
@@ -16,9 +16,9 @@ define('HTTPS_SERVER', 'http://localhost/penatabua/');
 
 // DIR
 // Em produção
-// define('DIR_APPLICATION', '/home/penatabua.com/public/catalog/');
-// define('DIR_SYSTEM', '/home/penatabua.com/public/system/');
-// define('DIR_IMAGE', '/home/penatabua.com/public/image/');
+// define('DIR_APPLICATION', '/home/u698496328/domains/walktur.com.br/public_html/penatabua/catalog/');
+// define('DIR_SYSTEM', '/home/u698496328/domains/walktur.com.br/public_html/penatabua/system/');
+// define('DIR_IMAGE', '/home/u698496328/domains/walktur.com.br/public_html/penatabua/image/');
 
 // Máquina local
 define('DIR_APPLICATION', 'C:/xampp/htdocs/penatabua/catalog/');
@@ -35,12 +35,12 @@ define('DIR_MODIFICATION', DIR_STORAGE . 'modification/');
 define('DIR_SESSION', DIR_STORAGE . 'session/');
 define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 
-// DB
+// // DB - Servidor
 // define('DB_DRIVER', 'mysqli');
-// define('DB_HOSTNAME', 'mysql380.umbler.com');
-// define('DB_USERNAME', 'penatabua');
+// define('DB_HOSTNAME', 'localhost');
+// define('DB_USERNAME', 'u698496328_opencart');
 // define('DB_PASSWORD', 'PenaTabua20');
-// define('DB_DATABASE', 'penatabua');
+// define('DB_DATABASE', 'u698496328_opencart');
 // define('DB_PORT', '3306');
 // define('DB_PREFIX', 'oc_');
 
