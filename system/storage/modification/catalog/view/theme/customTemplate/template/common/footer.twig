@@ -1,0 +1,95 @@
+<footer>
+  <div class="container container-footer">
+    <div class="row">
+      {% if informations %}
+      <div class="col-sm-3">
+        <h5>{{ text_information }}</h5>
+        <ul class="list-unstyled">
+         {% for information in informations %}
+          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="col-sm-3">
+        <h5>{{ text_service }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+
+          {# <li><a href="{{ return }}">{{ text_return }}</a></li>
+          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li> #}
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>{{ text_account }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ account }}">{{ text_account }}</a></li>
+          <li><a href="{{ order }}">{{ text_order }}</a></li>
+          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+            {# <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li> #}
+        </ul>
+      </div>
+        <div class="col-sm-3">
+          <h5>{{ text_extra }}</h5>
+          <ul class="list-unstyled redesociais">
+            {# <div id="redesociais"><!-- Div redes sociais -->	            #}
+              {# <a href="https://www.instagram.com/penatabuatur/" target="_blank"><img src="image/insta.png" border="0" title="Insta" /></a> #}
+              <li class= "redesociais"><a href=" https://www.instagram.com/penatabuatur/ "> <img src="image/insta.png" alt="Insta" style="width:50px"></a> 
+              <a href=" https://www.facebook.com/penatabuatur/ "> <img src="image/facebook.png" alt="Insta" style="width:50px"></a></li>
+              {# <li><a href=" https://www.facebook.com/penatabuatur/ "> <img src="image/facebook.png" alt="Insta" style="width:50px"></a></li> #}
+            {# </div><!-- Fim div Redes Sociais--> #}
+                        
+            {# <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+            <li><a href="{{ special }}">{{ text_special }}</a></li> #}
+          </ul>
+        </div>
+    </div>
+    <hr>
+    <p>{{ powered }}</p>
+  </div>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+
+{% if whats_status %}
+<a href="https://web.whatsapp.com/send?phone={{ numero }}&text=" class="whats_box hide-on-phone" target="_blank">
+<img alt="Whatsapp" src="image/{{ imagem }}"  class="whats_img"/> </a>
+<a href="https://api.whatsapp.com/send?phone={{ numero }}&text=" class="whats_box hide-on-dk" target="_blank">
+<img alt="Whatsapp" src="image/{{ imagem }}"  class="whats_img"/> </a>
+
+<style>
+.whats_box{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+.whats_img{
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+
+@media (min-width: 768px) {
+  
+.hide-on-dk{display:none;}
+  
+}
+
+@media only screen and (max-width: 760px) {
+  .hide-on-phone {display: none !important; }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .hide-on-tablet {display: none !important; } 
+}
+
+</style>
+{% endif %}
+            
+</body></html>

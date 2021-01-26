@@ -23,7 +23,7 @@ $_['text_forgotten']                 = 'Solicitar nova senha';
 $_['text_your_details']              = 'Seus dados';
 $_['text_your_address']              = 'Seu endereço';
 $_['text_your_password']             = 'Sua senha de acesso';
-$_['text_agree']                     = 'Eu li e concordo com o contrato de <a href="%s" class="agree"><b>%s</b></a>';
+$_['text_agree']                     = 'Eu li e concordo com o <a href="%s" class="agree"><b>%s</b></a>';
 $_['text_address_new']               = 'Utilizar um novo endereço';
 $_['text_address_existing']          = 'Utilizar um endereço cadastrado';
 $_['text_shipping_method']           = 'Selecione como deseja receber o seu pedido.';

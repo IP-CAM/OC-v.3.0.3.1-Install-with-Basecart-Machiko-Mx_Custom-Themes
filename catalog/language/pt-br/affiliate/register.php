@@ -14,7 +14,7 @@ $_['text_your_password']        = 'Sua senha de acesso';
 $_['text_cheque']               = 'Cheque';
 $_['text_paypal']               = 'PayPal';
 $_['text_bank']                 = 'Depósito bancário';
-$_['text_agree']                = 'Eu li e concordo com o contrato de <a href="%s" class="agree"><b>%s</b></a>';
+$_['text_agree']                = 'Eu li e concordo com o <a href="%s" class="agree"><b>%s</b></a>';
 
 // Entry
 $_['entry_customer_group']      = 'Tipo de cliente';

@@ -729,7 +729,7 @@ footer h5 {
 	text-align: center;
 	color: #000;
 	background-image: linear-gradient(to bottom, #f7814b, #f5611d);	
-	white-space: nowrap; 
+	/* white-space: nowrap;  */
 	width: auto;
 	/* max-width: 100px;  */
 	overflow: hidden;
@@ -790,14 +790,14 @@ h2.price {
 .product-thumb .price {
 	color: #000;
 	font-weight: bold;
-	background-image: linear-gradient(to bottom, #f5611d, #f7814b);	
-	white-space: nowrap; 
+	/* background-image: linear-gradient(to bottom, #f5611d, #f7814b);	 */
+	/* white-space: nowrap;  */
 	width: auto;
 	/* max-width: 100px;  */
 	text-align: center;
 	overflow: hidden;
 	text-overflow: clip; 
-	border: 1px solid #f5611d;
+	/* border: 1px solid #f5611d; */
 	padding: 5px 5px 5px 5px;
 	border-radius: 10px;
 	margin-top: 20px;
@@ -1135,7 +1135,7 @@ h2.price {
 	border-color: #fff !important;
 }
 .descricao-produto{
-	background-image: linear-gradient(to bottom,#d3d3d3, #fcfcfc);
+	background-image: linear-gradient(to bottom,#e4e4e4, #fcfcfc);
 	border-radius: 5px;
 	padding: 15px;
 
@@ -1217,4 +1217,11 @@ h2.cabecalho-categorias{
 	margin-top: auto;
 	font-size: 20px;
 	text-shadow: 0 1px 0 rgb(212, 212, 212);
+}
+
+.redesociais{
+	display: inline;
+	margin-right: 20px;
+	width: 50px;
+	text-align: center;
 }

@@ -1,0 +1,442 @@
+{{ header }} 
+{% include 'machiko/template/new_elements/wrapper_top.twig' %}
+
+<form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+  <fieldset>
+    <legend>{{ text_your_details }}</legend>
+    <div class="form-group required">
+      <label class="col-sm-2 control-label" for="input-firstname">{{ entry_firstname }} </label>
+      <div class="col-sm-10">
+        <input type="text" name="firstname" value="{{ firstname }}" placeholder="{{ entry_firstname }}" id="input-firstname" class="form-control" />
+        {% if error_firstname %}
+        <div class="text-danger">{{ error_firstname }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="form-group required">
+      <label class="col-sm-2 control-label" for="input-lastname">{{ entry_lastname }}</label>
+      <div class="col-sm-10">
+        <input type="text" name="lastname" value="{{ lastname }}" placeholder="{{ entry_lastname }}" id="input-lastname" class="form-control" />
+        {% if error_lastname %}
+        <div class="text-danger">{{ error_lastname }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="form-group required">
+      <label class="col-sm-2 control-label" for="input-email">{{ entry_email }}</label>
+      <div class="col-sm-10">
+        <input type="email" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control" />
+        {% if error_email %}
+        <div class="text-danger">{{ error_email }}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="form-group required">
+      <label class="col-sm-2 control-label" for="input-telephone">{{ entry_telephone }}</label>
+      <div class="col-sm-10">
+        <input type="tel" name="telephone" value="{{ telephone }}" placeholder="{{ entry_telephone }}" id="input-telephone" class="form-control" />
+        {% if error_telephone %}
+        <div class="text-danger">{{ error_telephone }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% for custom_field in custom_fields %}
+    {% if custom_field.type == 'select' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label" for="input-custom-field{{ custom_field.custom_field_id }}">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <select name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" id="input-custom-field{{ custom_field.custom_field_id }}" class="form-control">
+          <option value="">{{ text_select }}</option>
+          {% for custom_field_value in custom_field.custom_field_value %}
+          {% if account_custom_field[custom_field.custom_field_id] and custom_field_value.custom_field_value_id == account_custom_field[custom_field.custom_field_id] %}
+          <option value="{{ custom_field_value.custom_field_value_id }}" selected="selected">{{ custom_field_value.name }}</option>
+          {% else %}
+          <option value="{{ custom_field_value.custom_field_value_id }}">{{ custom_field_value.name }}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'radio' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <div>
+          {% for custom_field_value in custom_field.custom_field_value %}
+          <div class="radio">
+            {% if account_custom_field[custom_field.custom_field_id] and custom_field_value.custom_field_value_id == account_custom_field[custom_field.custom_field_id] %}
+            <label>
+              <input type="radio" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{{ custom_field_value.custom_field_value_id }}" checked="checked" />
+              {{ custom_field_value.name }}</label>
+            {% else %}
+            <label>
+              <input type="radio" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{{ custom_field_value.custom_field_value_id }}" />
+              {{ custom_field_value.name }}</label>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'checkbox' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <div>
+          {% for custom_field_value in custom_field.custom_field_value %}
+          <div class="checkbox">
+            {% if account_custom_field[custom_field.custom_field_id] and custom_field_value.custom_field_value_id in account_custom_field[custom_field.custom_field_id] %}
+            <label>
+              <input type="checkbox" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}][]" value="{{ custom_field_value.custom_field_value_id }}" checked="checked" />
+              {{ custom_field_value.name }}</label>
+            {% else %}
+            <label>
+              <input type="checkbox" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}][]" value="{{ custom_field_value.custom_field_value_id }}" />
+              {{ custom_field_value.name }}</label>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'text' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label" for="input-custom-field{{ custom_field.custom_field_id }}">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <input type="text" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{% if account_custom_field[custom_field.custom_field_id] %}{{ account_custom_field[custom_field.custom_field_id] }}{% else %}{{ custom_field.value }}{% endif %}" placeholder="{{ custom_field.name }}" id="input-custom-field{{ custom_field.custom_field_id }}" class="form-control" />
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'textarea' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label" for="input-custom-field{{ custom_field.custom_field_id }}">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <textarea name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" rows="5" placeholder="{{ custom_field.name }}" id="input-custom-field{{ custom_field.custom_field_id }}" class="form-control">{% if account_custom_field[custom_field.custom_field_id] %}{{ account_custom_field[custom_field.custom_field_id] }}{% else %}{{ custom_field.value }}{% endif %}</textarea>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'file' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <button type="button" id="button-custom-field{{ custom_field.custom_field_id }}" data-loading-text="{{ text_loading }}" class="btn btn-default"><i class="fa fa-upload"></i> {{ button_upload }}</button>
+        <input type="hidden" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{% if account_custom_field[custom_field.custom_field_id] %}{{ account_custom_field[custom_field.custom_field_id] }} {% endif %}" />
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'date' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label" for="input-custom-field{{ custom_field.custom_field_id }}">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <div class="input-group date">
+          <input type="text" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{% if account_custom_field[custom_field.custom_field_id] %}{{ account_custom_field[custom_field.custom_field_id] }}{% else %}{{ custom_field.value }}{% endif %}" placeholder="{{ custom_field.name }}" data-date-format="DD.MM.YYY" id="input-custom-field{{ custom_field.custom_field_id }}" class="form-control" />
+          <span class="input-group-btn">
+          <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+          </span></div>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'time' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label" for="input-custom-field{{ custom_field.custom_field_id }}">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <div class="input-group time">
+          <input type="text" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{% if account_custom_field[custom_field.custom_field_id] %}{{ account_custom_field[custom_field.custom_field_id] }}{% else %}{{ custom_field.value }}{% endif %}" placeholder="{{ custom_field.name }}" data-date-format="HH:mm" id="input-custom-field{{ custom_field.custom_field_id }}" class="form-control" />
+          <span class="input-group-btn">
+          <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+          </span></div>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if custom_field.type == 'time' %}
+    <div class="form-group{% if custom_field.required %} required {% endif %} custom-field" data-sort="{{ custom_field.sort_order }}">
+      <label class="col-sm-2 control-label" for="input-custom-field{{ custom_field.custom_field_id }}">{{ custom_field.name }}</label>
+      <div class="col-sm-10">
+        <div class="input-group datetime">
+          <input type="text" name="custom_field[{{ custom_field.location }}][{{ custom_field.custom_field_id }}]" value="{% if account_custom_field[custom_field.custom_field_id] %}{{ account_custom_field[custom_field.custom_field_id] }}{% else %}{{ custom_field.value }}{% endif %}" placeholder="{{ custom_field.name }}" data-date-format="YYYY-MM-DD HH:mm" id="input-custom-field{{ custom_field.custom_field_id }}" class="form-control" />
+          <span class="input-group-btn">
+          <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+          </span></div>
+        {% if error_custom_field[custom_field.custom_field_id] %}
+        <div class="text-danger">{{ error_custom_field[custom_field.custom_field_id] }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </fieldset>
+  <div class="buttons clearfix">
+    <div class="pull-left"><a href="{{ back }}" class="btn btn-default">{{ button_back }}</a></div>
+    <div class="pull-right">
+      <input type="submit" value="{{ button_continue }}" class="btn btn-primary" />
+    </div>
+  </div>
+</form>
+
+<script type="text/javascript"><!--
+// Sort the custom fields
+$('.form-group[data-sort]').detach().each(function() {
+  if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('.form-group').length) {
+    $('.form-group').eq($(this).attr('data-sort')).before(this);
+  }
+
+  if ($(this).attr('data-sort') > $('.form-group').length) {
+    $('.form-group:last').after(this);
+  }
+
+  if ($(this).attr('data-sort') == $('.form-group').length) {
+    $('.form-group:last').after(this);
+  }
+
+  if ($(this).attr('data-sort') < -$('.form-group').length) {
+    $('.form-group:first').before(this);
+  }
+});
+//--></script>
+<script type="text/javascript"><!--
+$('button[id^=\'button-custom-field\']').on('click', function() {
+  var element = this;
+
+  $('#form-upload').remove();
+
+  $('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+
+  $('#form-upload input[name=\'file\']').trigger('click');
+
+  if (typeof timer != 'undefined') {
+      clearInterval(timer);
+  }
+
+  timer = setInterval(function() {
+    if ($('#form-upload input[name=\'file\']').val() != '') {
+      clearInterval(timer);
+
+      $.ajax({
+        url: 'index.php?route=tool/upload',
+        type: 'post',
+        dataType: 'json',
+        data: new FormData($('#form-upload')[0]),
+        cache: false,
+        contentType: false,
+        processData: false,
+        beforeSend: function() {
+          $(element).button('loading');
+        },
+        complete: function() {
+          $(element).button('reset');
+        },
+        success: function(json) {
+          $(element).parent().find('.text-danger').remove();
+
+          if (json['error']) {
+            $(element).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
+          }
+
+          if (json['success']) {
+            alert(json['success']);
+
+            $(element).parent().find('input').val(json['code']);
+          }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+          alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+      });
+    }
+  }, 500);
+});
+//--></script>
+<script type="text/javascript"><!--
+$('.date').datetimepicker({
+  language: '{{ datepicker }}',
+  pickTime: false
+});
+
+$('.datetime').datetimepicker({
+  language: '{{ datepicker }}',
+  pickDate: true,
+  pickTime: true
+});
+
+$('.time').datetimepicker({
+  language: '{{ datepicker }}',
+  pickDate: false
+});
+//--></script>
+      
+{% include 'machiko/template/new_elements/wrapper_bottom.twig' %}
+
+					<script type="text/javascript"><!--
+						$("input[placeholder]").each( function () {
+						    if ($(this).attr("placeholder").indexOf("CPF")>=0) {
+								$(this).mask('000.000.000-00', {placeholder: "___.___.___-__"});
+						    }
+						    if ($(this).attr("placeholder").indexOf("CNPJ")>=0) {
+								$(this).mask('00.000.000/0000-00', {placeholder: "__.___.___/____-__"});
+						    }
+						    if ($(this).attr("placeholder").indexOf("Data")>=0) {
+								$(this).mask('00/00/0000', {placeholder: "__/__/____"});
+						    }
+						    if ($(this).attr("placeholder").indexOf("Telefone")>=0 || $(this).attr("placeholder").indexOf("Fax")>=0 || $(this).attr("placeholder").indexOf("Celular")>=0) {
+								var masks = ['(00) 00000-0000', '(00) 0000-00009'];
+								$(this).mask(masks[1], {
+									onKeyPress: function(val, e, field, options) {
+										field.mask(val.length > 14 ? masks[0] : masks[1], options) ;
+									},
+									placeholder: "(__)____-____"
+								});
+						    }
+						    if ($(this).attr("placeholder").indexOf("CEP")>=0) {
+								$(this).mask('00000-000', {placeholder: "_____-___", clearIfNotMatch: true});
+						    }
+						});
+					//--></script>
+				
+
+					<script type="text/javascript"><!--
+						function vCPF(cpf) {
+							cpf = cpf.replace(/[^\d]+/g,'');
+
+							if(cpf == '' || cpf.length != 11) return false;
+
+							var resto;
+							var soma = 0;
+
+							if (cpf == "00000000000" || cpf == "11111111111" || cpf == "22222222222" || cpf == "33333333333" || cpf == "44444444444" || cpf == "55555555555" || cpf == "66666666666" || cpf == "77777777777" || cpf == "88888888888" || cpf == "99999999999" || cpf == "12345678909") return false;
+
+							for (i=1; i<=9; i++) soma = soma + parseInt(cpf.substring(i-1, i)) * (11 - i);
+							resto = (soma * 10) % 11;
+
+							if ((resto == 10) || (resto == 11))  resto = 0;
+							if (resto != parseInt(cpf.substring(9, 10)) ) return false;
+
+							soma = 0;
+							for (i = 1; i <= 10; i++) soma = soma + parseInt(cpf.substring(i-1, i)) * (12 - i);
+							resto = (soma * 10) % 11;
+
+							if ((resto == 10) || (resto == 11))  resto = 0;
+							if (resto != parseInt(cpf.substring(10, 11) ) ) return false;
+							return true;
+						}
+						function vCNPJ(cnpj) {
+							cnpj = cnpj.replace(/[^\d]+/g,'');
+
+							if(cnpj == '' || cnpj.length != 14) return false;
+
+							if (cnpj == "00000000000000" || cnpj == "11111111111111" || cnpj == "22222222222222" || cnpj == "33333333333333" || cnpj == "44444444444444" || cnpj == "55555555555555" || cnpj == "66666666666666" || cnpj == "77777777777777" || cnpj == "88888888888888" || cnpj == "99999999999999") return false;
+
+							var tamanho = cnpj.length - 2
+							var numeros = cnpj.substring(0,tamanho);
+							var digitos = cnpj.substring(tamanho);
+							var soma = 0;
+							var pos = tamanho - 7;
+
+							for (i = tamanho; i >= 1; i--) {
+							  soma += numeros.charAt(tamanho - i) * pos--;
+							  if (pos < 2)
+									pos = 9;
+							}
+
+							var resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+
+							if (resultado != digitos.charAt(0)) return false;
+
+							tamanho = tamanho + 1;
+							numeros = cnpj.substring(0,tamanho);
+							soma = 0;
+							pos = tamanho - 7;
+
+							for (i = tamanho; i >= 1; i--) {
+							  soma += numeros.charAt(tamanho - i) * pos--;
+							  if (pos < 2) pos = 9;
+							}
+
+							resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+
+							if (resultado != digitos.charAt(1)) return false;
+
+							return true;
+						}
+						$("input[placeholder]").each( function () {
+							if ($(this).attr("placeholder").indexOf("CPF")>=0) {
+								var cId = $(this).attr("id");
+								$(this).blur(function(e){
+									if (e.currentTarget.value !== '' && !vCPF(e.currentTarget.value)) {
+										alert("Digite um CPF válido!");
+										$("#"+cId).val("");
+									}
+								});
+								$(this).mask('000.000.000-00', {
+									onComplete: function(val, e, field, options) {
+										if (!vCPF(val)) {
+											alert("Digite um CPF válido!");
+											$("#"+cId).val("");
+										}
+									},
+									placeholder: "___.___.___-__"
+								});
+							}
+							if ($(this).attr("placeholder").indexOf("CNPJ")>=0) {
+								var cnId = $(this).attr("id");
+								$(this).blur(function(e){
+									if (e.currentTarget.value !== '' && !vCNPJ(e.currentTarget.value)) {
+										alert("Digite um CNPJ válido!");
+										$("#"+cnId).val("");
+									}
+								});
+								$(this).mask('00.000.000/0000-00', {
+									onComplete: function(val, e, field, options) {
+										if (!vCNPJ(val)) {
+											alert("Digite um CNPJ válido!");
+											$("#"+cnId).val("");
+										}
+									},
+									placeholder: "__.___.___/____-__"
+								});
+							}
+							if ($(this).attr("placeholder").indexOf("Data")>=0) {
+								$(this).mask('00/00/0000', {placeholder: "__/__/____"});
+							}
+							if ($(this).attr("placeholder").indexOf("Telefone")>=0 || $(this).attr("placeholder").indexOf("Fax")>=0 || $(this).attr("placeholder").indexOf("Celular")>=0) {
+								var masks = ['(00) 00000-0000', '(00) 0000-00009'];
+								$(this).mask(masks[1], {
+									onKeyPress: function(val, e, field, options) {
+										field.mask(val.length > 14 ? masks[0] : masks[1], options) ;
+									},
+									placeholder: "(__)____-____"
+								});
+							}
+							if ($(this).attr("placeholder").indexOf("CEP")>=0) {
+								$(this).mask('00000-000', {placeholder: "_____-___", clearIfNotMatch: true});
+							}
+						});
+					//--></script>
+				
+{{ footer }}

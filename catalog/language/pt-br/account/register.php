@@ -9,11 +9,11 @@ $_['text_account_already'] = 'Se você já tem uma conta em nossa loja, acesse s
 $_['text_your_details']    = 'Seus dados de contato';
 $_['text_newsletter']      = 'Novidades, ofertas e promoções por e-mail';
 $_['text_your_password']   = 'Sua senha de acesso';
-$_['text_agree']           = 'Eu li e concordo com o contrato de <a href="%s" class="agree"><b>%s</b></a>';
+$_['text_agree']           = 'Eu li e concordo com o <a href="%s" class="agree"><b>%s</b></a>';
 
 // Entry
 $_['entry_customer_group'] = 'Comprar como';
-$_['entry_firstname']      = 'Nome';
+$_['entry_firstname']      = 'Nome completo confome Documento';
 $_['entry_lastname']       = 'Sobrenome';
 $_['entry_email']          = 'E-mail';
 $_['entry_telephone']      = 'Telefone com DDD';
