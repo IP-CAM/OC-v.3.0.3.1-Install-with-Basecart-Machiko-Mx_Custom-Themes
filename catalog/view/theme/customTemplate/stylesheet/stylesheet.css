@@ -422,6 +422,7 @@ div.required .control-label:before {
 /* content */
 #content {
 	min-height: 600px;
+	padding: 0px !important;
 }
 /* footer */
 footer {
@@ -961,7 +962,7 @@ h2.price {
 
     #content + #column-right .product-layout .col-md-3 {
        width: 100%;
-    }
+	}
 }
 
 /* fixed product layouts used in left and right columns */
