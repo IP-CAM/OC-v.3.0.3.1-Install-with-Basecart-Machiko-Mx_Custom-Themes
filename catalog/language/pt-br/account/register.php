@@ -14,7 +14,7 @@ $_['text_agree']           = 'Eu li e concordo com o <a href="%s" class="agree">
 // Entry
 $_['entry_customer_group'] = 'Comprar como';
 $_['entry_firstname']      = 'Nome completo confome Documento';
-$_['entry_lastname']       = 'Sobrenome';
+$_['entry_lastname']       = 'Digite o número 1';
 $_['entry_email']          = 'E-mail';
 $_['entry_telephone']      = 'Telefone com DDD';
 $_['entry_newsletter']     = 'Deseja receber?';

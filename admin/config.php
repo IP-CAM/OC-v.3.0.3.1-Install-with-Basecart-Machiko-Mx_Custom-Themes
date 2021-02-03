@@ -25,7 +25,7 @@ define('HTTPS_CATALOG', 'http://localhost/penatabua/');
 define('DIR_APPLICATION', 'C:/xampp/htdocs/penatabua/admin/');
 define('DIR_SYSTEM', 'C:/xampp/htdocs/penatabua/system/');
 define('DIR_IMAGE', 'C:/xampp/htdocs/penatabua/image/');
-define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
+define('DIR_STORAGE', 'C:/xampp/storage/');
 // define('DIR_CATALOG', '/home/u698496328/domains/walktur.com.br/public_html/penatabua/catalog/');
 // // DIR Máquina Local
 define('DIR_CATALOG', 'C:/xampp/htdocs/penatabua/catalog/');
@@ -53,7 +53,7 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'penatabua');
+define('DB_DATABASE', 'penatabua2');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
